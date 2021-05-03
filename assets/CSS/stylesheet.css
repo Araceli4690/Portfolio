@@ -125,7 +125,7 @@ section {
 }
 .bio-text p{
     line-height: 1.3;
-    color: green;
+    color: black;
     width: 100%;
     font-size: 16px;
     margin: 8% 0 0 auto;
@@ -156,7 +156,7 @@ section {
 }
 .sample-1 {
     display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sample-1.jpg");
     background-size: cover;
     align-items: flex-end;
     background-attachment: fixed;
@@ -164,6 +164,9 @@ section {
     margin: 10% auto;
     width: 95%;
     height: 300px;
+}
+.sample-1:hover {
+    background-image: url("../images/sample-1.jpg");
 }
 .sample-1-text {
     width: 100%;
@@ -173,13 +176,13 @@ section {
     font-size: 14px;
     line-height: 1.2;
 }
-.sample {
+.sample-2 {
     padding: 10px 10px;
     line-height: 1.3;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sample-2.jpg");
     background-size: cover;
     align-items: flex-end;
     background-attachment: fixed;
@@ -188,7 +191,64 @@ section {
     width: 40%;
     height: 100px;
 }
-.sample-2-text {
+.sample-2:hover {
+    background-image: url("../images/sample-2.jpg");
+}
+.sample-3 {
+    padding: 10px 10px;
+    line-height: 1.3;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sample-3.jpg");
+    background-size: cover;
+    align-items: flex-end;
+    background-attachment: fixed;
+    background-position: 80%;
+    margin: 10px 5px auto;
+    width: 40%;
+    height: 100px;
+}
+.sample-3:hover {
+    background-image: url("../images/sample-3.jpg");
+}
+.sample-4 {
+    padding: 10px 10px;
+    line-height: 1.3;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sample-4.jpg");
+    background-size: cover;
+    align-items: flex-end;
+    background-attachment: fixed;
+    background-position: 80%;
+    margin: 10px 5px auto;
+    width: 40%;
+    height: 100px;
+}
+.sample-4:hover {
+    background-image: url("../images/sample-4.jpg");
+}
+.sample-5 {
+    padding: 10px 10px;
+    line-height: 1.3;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sample-5.jpg");
+    background-size: cover;
+    align-items: flex-end;
+    background-attachment: fixed;
+    background-position: 80%;
+    margin: 10px 5px auto;
+    width: 40%;
+    height: 100px;
+}
+.sample-5:hover {
+    background-image: url("../images/sample-5.jpg");
+}
+.sample-text {
     width: 100%;
     text-align: end;
     margin: 5.5%;
@@ -283,5 +343,67 @@ footer div {
     .hero-cta {
         width: 100%;
         text-align: center;
+    }
+    .contact-info iframe{
+        flex: 1 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+    .work-1 h2 {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .sample-2 {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center; 
+    }
+    .sample-3 {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center; 
+    }
+    .sample-4 {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center; 
+    }
+    .sample-5 {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center; 
+    }
+    .sample-text {
+        flex: 100%; 
+    }
+}
+@media screen and (max-width: 575px) {
+    .section-title {
+        width: 95%;
+        border-right: none;
+    }
+    .intro p {
+        width: 100%;
+    }
+    .sample-2 {
+        flex: 0 100%;
+    }
+    .sample-3 {
+        flex: 0 100%;
+    }
+    .sample-4 {
+        flex: 0 100%;
+    }
+    .sample-5 {
+        flex: 0 100%;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .contact-info > * {
+        flex: 0 100%;
     }
 }
