@@ -76,6 +76,7 @@ section {
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;
+    padding: 0 0 175px 0;
 }
 .hero-cta {
     width: 35%;
@@ -156,17 +157,16 @@ section {
 }
 .sample-1 {
     display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sample-1.jpg");
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/myHealth.png");
+    background-size: 500px;
     align-items: flex-end;
-    background-attachment: fixed;
-    background-position: 80%;
+    background-position: center;
     margin: 10% auto;
     width: 95%;
     height: 300px;
 }
 .sample-1:hover {
-    background-image: url("../images/sample-1.jpg");
+    background-image: url("../images/myHealth.png");
 }
 .sample-1-text {
     width: 100%;
@@ -182,17 +182,16 @@ section {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sample-2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/moodsic.png");
     background-size: cover;
     align-items: flex-end;
-    background-attachment: fixed;
     background-position: 80%;
     margin: 10px 5px auto;
     width: 40%;
     height: 100px;
 }
 .sample-2:hover {
-    background-image: url("../images/sample-2.jpg");
+    background-image: url("../images/moodsic.png");
 }
 .sample-3 {
     padding: 10px 10px;
