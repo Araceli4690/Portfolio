@@ -155,6 +155,16 @@ section {
     flex-wrap: wrap;
     justify-content:space-around;
 }
+.sample {
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tutti-frutti.png");
+    background-size: 500px;
+    align-items: flex-end;
+    background-position: center;
+    margin: 10% auto;
+    width: 85%;
+    height: 280px;
+}
 .sample-1 {
     display: flex;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/myHealth.png");
@@ -162,7 +172,7 @@ section {
     align-items: flex-end;
     background-position: center;
     margin: 10% auto;
-    width: 95%;
+    width: 85%;
     height: 300px;
 }
 .sample-1:hover {
