@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --highlight-color: #9edce4;;
 }
 Body {
     color:black;
@@ -16,28 +17,27 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 35px;
-    background-color: pink;
+  
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
+    
+  
     z-index: 9999;
 }
+
 header h1 {
-    color: #f7fff8;
+    color: black;
     font-size: 24px;
     font-weight: bold;
     margin: 0;
-    text-shadow: 0 0 5px black;
+  
 }
 
 header a {
-    color: #f7fff8;
+    color: black;
 }
+
 header nav {
     margin: 7px 0;
 }
@@ -52,7 +52,7 @@ header nav ul li a{
     padding: 10px 15px;
     font-weight: bold;
     font-size: 16px;
-    text-shadow: 0 0 10px wheat;
+ 
 }
 header nav ul li a:hover {
     background-color: pink;
@@ -66,33 +66,89 @@ section {
 
 
 /* Hero Section */
+
 .hero {
+  
+    margin: 220px 0px 220px 0px;
+    color: black;
+    font-size: 30px;
+    line-height: 2;
+}
+
+.hero p{
+   font-size: 16px;
+  
+}
+.hero-cta{
+    align-items: flex-start;
+}
+
+.container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-bg.jpg");
-    background-size: cover;
-    background-position: center;
     align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
-    padding: 0 0 175px 0;
-}
-.hero-cta {
-    width: 35%;
-    text-align: center;
-    margin: 5.5%;
-    color: pink;
-    font-size: 60px;
-    line-height: 1.2;
-}
-.hero-cta h2{
-    text-shadow: 0 0 5px black;
-}
-.hero-cta p{
-   font-size: 16px;
-   color: hsl(316, 100%, 98%); 
-}
+    height: 100%;
+  }
+
+  
+  .object {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+  }
+  
+  .object__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid var(--highlight-color);
+    border-radius: 50%;
+  }
+  
+  .object__intro {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 300px;
+    padding-left: 20px;
+    color: var(--highlight-color);
+  }
+  
+  .object__intro-text {
+    line-height: 1.5;
+  }
+  
+  .arrow {
+    position: absolute;
+  
+    left: 190px;
+    width: calc(50% - 200px);
+    height: 30%;
+    /* uncomment to see the arrow's rectangle bg*/
+  /*   background: white;  */
+  }
+  
+  .arrow__body {
+    width: 95%;
+    height: 95%;
+    margin-left: 10px;
+    border-width: 5px 0 0 5px;
+    border-style: dashed;
+    border-color: var(--highlight-color);
+    border-top-left-radius: 100%;
+  }
+  
+  .arrow__body::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 20px 15px 0;
+    border-style: solid;
+    border-color: var(--highlight-color) transparent transparent;
+  }
 /* About Me Section*/
 .intro {
     display: flex;
