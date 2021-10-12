@@ -177,15 +177,16 @@ section {
 /*work Section */
 
 
-.portfolio {
-    width:80%;
-    margin: 200px 0px 220px 150px;
 
-}
 .container {
     display: flex;
-   
-    height: 100%;
+    flex-wrap: wrap;
+   text-align:left;
+    height: 50%;
+  }
+  .container p {
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 12px;
   }
 
 .card {
@@ -195,6 +196,10 @@ section {
     border: 2px solid #e7e7e7;
     border-radius: 4px;
     padding: .5rem;
+    background-color: rgb(241 254 255);
+    text-align: center;
+    height: 100%;
+
 }
   
 .card:hover {
@@ -216,6 +221,10 @@ section {
   grid-gap: 1rem;
    
   }
+  .links a{
+    text-decoration: none;
+    color: black;
+}
 /* contact */
 .contact {
     display: flex;
@@ -253,7 +262,6 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #f7fff8;
     /*thistle;*/
     width: 100%;
     padding: 25px 35px;
@@ -357,13 +365,7 @@ footer div {
     .contact-info iframe{
         flex: 1 100%;
     }
-    .portfolio {
-        width: 100%;
-        
-         margin: 0px 0px 220px 100px;
-         text-align: center;
-         align-items: center;
-    }
+  
     
     .top-arrow{
 	text-align: right;
@@ -373,6 +375,10 @@ footer div {
 @media screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
+    }
+     .card{
+    	width: 100%;
+    	height: fit-content;
     }
  
 }
@@ -391,14 +397,13 @@ footer div {
     .contact-info > * {
         flex: 0 100%;
     }
+    .card{
+    	width: 100%;
+    	height: fit-content;
+    }
     .container{
     	font-size: 10px;
+
     }
-      .portfolio {
-        width: 100%;
-        
-         margin: 0px 0px 220px 50px;
-         text-align: center;
-         align-items: center;
-    }
+     
 }
