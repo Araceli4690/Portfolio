@@ -135,6 +135,20 @@ section {
     border-style: solid;
     border-color: var(--highlight-color) transparent transparent;
   }
+
+  /*Skills section*/
+  .skillsCard{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    padding: 0 0 10px 0;
+    background-color: #dbf2f5;
+    color: rgb(3, 141, 191);
+    text-align: center;
+    height: 100%;
+  }
 /* About Me Section*/
 .intro {
     display: flex;
