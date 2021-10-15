@@ -384,6 +384,10 @@ footer div {
  
 }
 @media screen and (max-width: 575px) {
+    body{
+		width: 380px;
+		
+	}
     .section-title {
         width: 95%;
         border-right: none;
