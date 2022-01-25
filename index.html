@@ -16,9 +16,11 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -50,10 +52,16 @@
         <div class="hero-container">
             <div class="object">
                 <img src="https://res.cloudinary.com/pamcy/image/upload/v1543992134/coding/sad_dog.jpg" alt=""
-                    class="object__img">
+                    class="object__img" />
                 <div class="object__intro">
-                    <h1 class="object__intro-title">Araceli Carmona </h1>
-                    <p class="object__intro-text">Front-end web developer</p>
+                    <h1 class="object__intro-title" style="padding: 0 0 10px 0;">Araceli Carmona </h1>
+                    <div class='scroller'>
+                        <span>
+                            Welcome! <br />
+                            Front-end developer<br />
+                            UI/UX designer<br />
+                        </span>
+                    </div>
                 </div>
             </div>
 
@@ -61,271 +69,165 @@
                 <div class="arrow__body"></div>
             </div>
         </div>
-        <div class='top-arrow'>
-            <a href="#" class="to-top">Back to top</a>
-        </div>
+
     </section>
     <!--Skills-->
+
     <section id="skills">
-        <div class='skillSet'>
-            <div class='skillsCard'>
-                <h1 style="font-family: 'Roboto Slab', serif">Technical Skills</h1>
-                </br>
-                <h4>
-                    < />
-                </h4>
-                </br>
-                <p>HTML5, CSS, JavaScript, React, jQuery, Bootstrap, Node.js, AJAX, MySQL, NoSQL,
-                    Express.js, HandlebarsJS, Git, GitHub, RESTAPI</p>
-                </br>
-                <div style="letter-spacing: 20px;">
-                    <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" />
-                    <img src="https://img.icons8.com/color/48/000000/nodejs.png" />
-                    <img src="https://img.icons8.com/color/48/000000/bootstrap.png" />
-                    <img src="https://img.icons8.com/ios/50/000000/mysql-logo.png" />
-                    <img src="https://img.icons8.com/bubbles/50/000000/react.png" />
-                    <img src="https://img.icons8.com/bubbles/50/000000/github.png" />
-                </div>
+
+        <div class='skillsCard' data-aos="fade-up">
+            <h1 style="font-family: 'Roboto Slab', serif">Technical Skills</h1>
+            </br>
+            <h4>
+                < />
+            </h4>
+            </br>
+            <p>HTML5, CSS, JavaScript, React, jQuery, Bootstrap, Node.js, AJAX, MySQL,
+                Express.js, Git, GitHub</p>
+            </br>
+            <div style="letter-spacing: 20px;">
+                <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" />
+                <img src="https://img.icons8.com/color/48/000000/nodejs.png" />
+                <img src="https://img.icons8.com/color/48/000000/bootstrap.png" />
+                <img src="https://img.icons8.com/ios/50/000000/mysql-logo.png" />
+                <img src="https://img.icons8.com/bubbles/50/000000/react.png" />
+                <img src="https://img.icons8.com/bubbles/50/000000/github.png" />
             </div>
         </div>
+
     </section>
-    </br>
-    </br>
+
     <!--Portfolio Section-->
-    <section id="work" class="portfolio">
+    <section id="work" class="portfolio" data-aos="fade-up">
 
-
-
-        <h1 class="section-title" style="text-align: center; font-family: 'Roboto Slab', serif; color: #258dbf">
-            Works
+        <h1 class="section-title" style="text-align: center; font-family: 'Roboto Slab', serif">
+            Work
         </h1>
         </br>
-        <P>A few of the recent projects I have created, feel free to browse my complete works on my <a
-                href="https://github.com/Araceli4690" class='githubLink'>Github</a>
-        </P>
         </br>
         <div class="work">
-
             <div class="card">
+                <div class="image">
+                    <img src="assets/images/tutti-frutti.png" />
+                </div>
+                <div class="details">
+                    <div class="center">
+                        <h1>Tutti Frutti<br></h1>
+                        <p>An e-commerce app that allows users to shop by category and checkout using secrue payment.
+                        </p>
+                        <ul>
+                            <li><a href="https://pacific-tundra-51518.herokuapp.com/"><i class="fa fa-window-maximize"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/Araceli4690/TuttiFrutti-shop.git"><i class="fa fa-github"
+                                        aria-hidden="true"></i></a></li>
 
-                <img src="assets/images/tutti-frutti.png" alt="Avatar" style="width:100%">
-
-
-                </br>
-                <h4>Tutti Frutti</h4>
-
-                <div class="container">
-                    <p>An e-commerce app that allows users to shop by category and checkout using secrue payment.
-                        </br>
-                        </br>
-                        Features: MongoDB, Express.js, React, Node.js, Stripe Payment
-                    </p>
-                    <div class='links'>
-                        <a href="https://github.com/Araceli4690/TuttiFrutti-shop.git">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                            </svg>
-                            GitHub
-                        </a>
-                        <a href="https://pacific-tundra-51518.herokuapp.com/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-window" viewBox="0 0 16 16">
-                                <path
-                                    d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
-                                <path
-                                    d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z" />
-                            </svg>
-                            App
-                        </a>
+                        </ul>
                     </div>
                 </div>
             </div>
+
             <div class="card">
+                <div class="image">
+                    <img src="assets/images/insta-clone.png" />
+                </div>
+                <div class="details">
+                    <div class="center">
+                        <h1>Instagram Clone<br></h1>
+                        <p>This application is an instagram clone where users can share and comment on posts.</p>
+                        <ul>
+                            <li><a href="https://insta-clone-7318b.firebaseapp.com/"><i class="fa fa-window-maximize"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/Araceli4690/Instagram-clone.git"><i class="fa fa-github"
+                                        aria-hidden="true"></i></a></li>
 
-                <img src="assets/images/insta-clone.png" alt="Avatar" style="width:100%">
-
-
-                </br>
-                <h4>Instagram clone</h4>
-
-                <div class="container">
-                    <p>This application is an instagram clone where users can share and comment on posts.
-                        </br>
-                        </br>
-                        Features: React, JavaScript, Firebase, HTML5, CSS3
-                    </p>
-                    <div class='links'>
-                        <a href="https://github.com/Araceli4690/Instagram-clone.git">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                            </svg>
-                            GitHub
-                        </a>
-                        <a href="https://insta-clone-7318b.firebaseapp.com/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-window" viewBox="0 0 16 16">
-                                <path
-                                    d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
-                                <path
-                                    d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z" />
-                            </svg>
-                            App
-                        </a>
+                        </ul>
                     </div>
                 </div>
             </div>
+
+
             <div class="card">
+                <div class="image">
+                    <img src="assets/images/shop-shop.png" />
+                </div>
+                <div class="details">
+                    <div class="center">
+                        <h1>Shop-Shop<br></h1>
+                        <p>An an e-commerce site where customers can shop for a variety of products and checkout using
+                            Stripe.</p>
+                        <ul>
+                            <li><a href="https://salty-plateau-17709.herokuapp.com/"><i class="fa fa-window-maximize"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/Araceli4690/shop-shop-store.git"><i class="fa fa-github"
+                                        aria-hidden="true"></i></a></li>
 
-                <img src="assets/images/shop-shop.png" alt="Avatar" style="width:100%">
-
-
-                </br>
-                <h4>Shop-Shop</h4>
-
-                <div class="container">
-                    <p>An an e-commerce site where customers can shop for a variety of products and checkout using
-                        Stripe.
-                        </br>
-                        </br>
-                        Features: React, Node.js, Express.js, MongoDB
-                    </p>
-                    <div class='links'>
-                        <a href="https://github.com/Araceli4690/shop-shop-store.git">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                            </svg>
-                            GitHub
-                        </a>
-                        <a href="https://salty-plateau-17709.herokuapp.com/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-window" viewBox="0 0 16 16">
-                                <path
-                                    d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
-                                <path
-                                    d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z" />
-                            </svg>
-                            App
-                        </a>
+                        </ul>
                     </div>
                 </div>
             </div>
+
             <div class="card">
+                <div class="image">
+                    <img src="assets/images/googleBooks.png" />
+                </div>
+                <div class="details">
+                    <div class="center">
+                        <h1>Book Search<br></h1>
+                        <p>The book search app is a Google Books API search engine built with Apollo Server
+                            GraphQL
+                            API.</p>
+                        <ul>
+                            <li><a href="https://glacial-stream-44112.herokuapp.com/"><i class="fa fa-window-maximize"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/Araceli4690/book-search.git"><i class="fa fa-github"
+                                        aria-hidden="true"></i></a></li>
 
-                <img src="assets/images/googleBooks.png" alt="Avatar" style="width:100%">
-
-
-                </br>
-                <h4>Book Search</h4>
-
-                <div class="container">
-                    <p>The Google books search app is a Google Books API search engine built with Apollo Server GraphQL
-                        API.
-                        </br>
-                        </br>
-                        Features: MongoDB, Express.js, React, Node.js, GoogleBooks API
-                    </p>
-                    <div class='links'>
-                        <a href="https://github.com/Araceli4690/book-search.git">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                            </svg>
-                            GitHub
-                        </a>
-                        <a href="https://glacial-stream-44112.herokuapp.com/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-window" viewBox="0 0 16 16">
-                                <path
-                                    d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
-                                <path
-                                    d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z" />
-                            </svg>
-                            App
-                        </a>
+                        </ul>
                     </div>
                 </div>
             </div>
+
             <div class="card">
+                <div class="image">
+                    <img src="assets/images/budgetTracker.png" />
+                </div>
+                <div class="details">
+                    <div class="center">
+                        <h1>Budget Tracker<br></h1>
+                        <p>The budget tracker is a progressive web app(PWA) that gives users a fast and easy way to
+                            track
+                            their money an any time.</p>
+                        <ul>
+                            <li><a href="https://budget-tracker-app-2.herokuapp.com/"><i class="fa fa-window-maximize"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/Araceli4690/Budget-tracker-app.git"><i class="fa fa-github"
+                                        aria-hidden="true"></i></a></li>
 
-                <img src="assets/images/budgetTracker.png" alt="Avatar" style="width:100%">
-
-
-                </br>
-                <h4>Budget Tracker</h4>
-
-                <div class="container">
-                    <p>The budget tracker is a progressive web app(PWA) that gives users a fast and easy way to track
-                        their money an any time.
-                        </br>
-                        </br>
-                        Features: MongoDB, Mongoose, Express.js, Node.js
-                    </p>
-                    <div class='links'>
-                        <a href="https://github.com/Araceli4690/Budget-tracker-app.git">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                            </svg>
-                            GitHub
-                        </a>
-                        <a href="https://budget-tracker-app-2.herokuapp.com/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-window" viewBox="0 0 16 16">
-                                <path
-                                    d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
-                                <path
-                                    d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z" />
-                            </svg>
-                            App
-                        </a>
+                        </ul>
                     </div>
                 </div>
             </div>
+
             <div class="card">
+                <div class="image">
+                    <img src="assets/images/workday.png" />
+                </div>
+                <div class="details">
+                    <div class="center">
+                        <h1>Work Day Scheduler<br></h1>
+                        <p>A simple calendar application that allows users to save events for the day on an hour to hour
+                            basis.</p>
+                        <ul>
+                            <li><a href="https://araceli4690.github.io/work-day-scheduler/"><i
+                                        class="fa fa-window-maximize" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/Araceli4690/work-day-scheduler.git"><i class="fa fa-github"
+                                        aria-hidden="true"></i></a></li>
 
-                <img src="assets/images/workday.png" alt="Avatar" style="width:100%">
-
-
-                </br>
-                <h4>Work Day Scheduler</h4>
-
-                <div class="container">
-                    <p>A simple calendar application that allows users to save events for the day on an hour to hour
-                        basis.
-                        </br>
-                        </br>
-                        Features: JavaScript, jQuery, HTML5, CSS3
-                    </p>
-                    <div class='links'>
-                        <a href="https://github.com/Araceli4690/work-day-scheduler.git">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                            </svg>
-                            GitHub
-                        </a>
-                        <a href="https://araceli4690.github.io/work-day-scheduler/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-window" viewBox="0 0 16 16">
-                                <path
-                                    d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
-                                <path
-                                    d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z" />
-                            </svg>
-                            App
-                        </a>
+                        </ul>
                     </div>
                 </div>
             </div>
+
         </div>
         </br>
         </br>
@@ -333,9 +235,9 @@
     </section>
 
     <!--About Me Section-->
-    <section id="about-me" class="intro">
+    <section id="about-me" class="intro" data-aos="fade-up">
         <div class="bio">
-            <h2 class="section-title" style="font-family: 'Roboto Slab', serif; color: #258dbf">
+            <h2 class="section-title" style="font-family: 'Roboto Slab', serif">
                 About Me
             </h2>
             </br>
@@ -344,30 +246,29 @@
                     <img src="./assets/images/profile.jpg" alt="Araceli Carmona posing with one of her plants" />
 
                     <div class="bio-text">
-                        <p style="text-align: center;">
+                        <p>
                             Front-end web developer with a drive to create clients visions into fully functional web
-                            applications. Skilled in front-end and back-end web development, but my forte is React.
-                            Strong research professional with a Bachelor's degree focused in Linguistics from Cal State
-                            Long Beach and a full-stack web development certificate from UCLA. I am a problem-solver and
+                            applications. I am a problem-solver and
                             critical thinker who is always eager to learn new skills and technologies. My experience
                             working in research labs has turned me into an excellent team player and organizer who has
                             great communication skills. Did I also mention that I am an expert at Googling?
                         </p>
+                    </div>
                 </article>
             </div>
         </div>
     </section>
 
     <!--Contact Me Section-->
-    <section id="contact-me" class="contact">
+    <section id="contact-me" class="contact" data-aos="fade-up">
 
         <h2 class="section-title" style="text-align: center; font-family: 'Roboto Slab', serif; color: #258dbf">Get in
             touch!</h2>
 
-        <P style="text-align: center; padding-top: 10px;"">You can email me  @ carmona.araceli.4690@gmail.com</P>
+
         <P style=" text-align: center; padding-top: 10px;"">Download Resume Here: <a
-                href="./assets/images/resume2.0.docx" download="resume_AraceliCarmona"><img
-                    src="https://img.icons8.com/windows/32/000000/download--v1.png" /></a></P>
+                href=" ./assets/images/resume2.0.docx" download="resume_AraceliCarmona"><img
+                src="https://img.icons8.com/windows/32/000000/download--v1.png" /></a></P>
 
         <div class=" contact-info">
             <a href="mailto: carmona.araceli.4690@gmail.com">
@@ -394,4 +295,10 @@
             &copy; 2021 Araceli Carmona
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
 </body>
